@@ -1,0 +1,74 @@
+
+{
+  
+  "name": "INCONNNU-XD-V2",
+  "description": "Best Whatsapp bot made by inconnu boy tech",
+  "logo":"https://files.catbox.moe/959dyk.jpg",
+  "keywords": [
+    "whatsapp bot"
+  ],
+  "repository": "https://github.com/Shadowjeager/INCONNU-XD-V2/blob/main/app.json",
+  "stack":"heroku-24",
+  "env":{
+      "SESSION_ID": {
+      "description": "Paste here session id that you have scanned",
+      "required": true,
+      "value": "INCONNU~XD~79IEwb6I#yiE1IuA0soiHP1K9JyqbT0g5k4e9Kd8OlVykSJBn8mQ"
+    },
+    "MODE": {
+      "description": "Enter public or private",
+      "required": true,
+      "value": "private"
+    },
+    "AUTO_STATUS_SEEN": {
+      "description": "Enter true for autoview status. Or leave blank",
+      "required": false,
+      "value": "true"
+    },
+    "AUTO_READ": {
+      "description": "Enter true for autoread messages. Or leave blank",
+      "required": false,
+      "value": "true"
+    },
+    "AUTO_TYPING": {
+      "description": "Enter true for autotype. Or leave blank",
+      "required": false,
+      "value": "true"
+    },
+    "AUTO_RECORDING": {
+      "description": "Enter true if you want bot to show recording audio. Or leave blank",
+      "required": false,
+      "value": "false"
+    },
+    "ALWAYS_ONLINE": {
+      "description": "Enter it true if you want bot to show always online. Or leave blank",
+      "required": false,
+      "value": "true"
+    },
+    "AUTO_BLOCK": {
+      "description": "Enter it true if you want bot to auto block only 212 numbers. Or leave blank",
+      "required": false,
+      "value": "false"
+    },
+    "REJECT_CALL": {
+      "description": "Enter it true if you want to reject call Or leave blank",
+      "required": false,
+      "value": "false"
+   
+    }
+    },
+    "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick.git"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    }
+  ]
+}
